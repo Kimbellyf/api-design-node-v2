@@ -19,7 +19,7 @@ server.listen(3000, () => {
 	console.log('Server listening on port 3000')
 })
 
-//aqui é uma lista .....
+//aqui é uma lista/pilha de requisições e chamadas de modulos? .....
 if (module.hot) {
 	module.hot.accept(['./server'], () => {
 		server.removeListener('request', currentApp)

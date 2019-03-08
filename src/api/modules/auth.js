@@ -24,7 +24,7 @@ export const decodeToken = () => (req, res, next) => {
     return next()
   }
   
-  //torna opcional colocar token na string de consulta
+  // torna opcional colocar token na string de consulta
   // se for, coloque nos cabeçalhos onde deveria estar
   // então checkToken pode ver isso. Veja abaixo o formato 'Bearer 034930493'
   // então checkToken pode ver e decodificá-lo

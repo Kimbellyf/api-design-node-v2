@@ -1,3 +1,5 @@
+// Express.js ele é um excelente framework do Node.js 
+//que nos auxilia na construção das nossas aplicações Web.
 import express from 'express'
 import setupMiddware from './middleware'
 import { restRouter, graphQLRouter } from './api'
@@ -19,6 +21,7 @@ app.use('/graphql', graphQLRouter)
 app.use('/docs', graphiqlExpress({ endpointURL: '/graphql' }))
 
 // catch all
+//callback que recebe uma req e envia uma resposta em json
 app.all('*', (req, res) => {
   res.json({ok: true})
 })

@@ -17,6 +17,8 @@ let envConfig = {}
 switch (env) {
   case 'development':
   case 'dev':
+  //se estiver no projeto o require é um caminho relativo se n,...
+  //um ponto seguido do outro faz com q vc saia de uma pasta  para outra
     envConfig = require('./dev').config
     break;
   case 'test':

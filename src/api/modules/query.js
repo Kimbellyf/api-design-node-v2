@@ -1,5 +1,7 @@
+//lodash é para importar um .. modulos de terceiros 
 import merge from 'lodash.merge'
 
+//crud 
 export const controllers = {
   createOne(model, body) {
     return model.create(body)
