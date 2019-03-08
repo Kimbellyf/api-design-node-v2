@@ -1,5 +1,6 @@
 import mongoose from 'mongoose'
 
+//aqui abaixo os atributos e se são requeridos ou n
 const songSchema = new mongoose.Schema({
   title: {
     type: String,
